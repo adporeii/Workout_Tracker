@@ -61,14 +61,14 @@ const HistoryPage = () => {
                                     <div style={{ fontWeight: 'bold', fontSize: '1.1rem' }}>
                                         {format(date, 'MMM do, yyyy')}
                                     </div>
-                                    <div className="text-accent">
-                                        Workout {workout.type}
-                                        {getWorkoutDuration(workout) && (
-                                            <span style={{ marginLeft: '8px', opacity: 0.7 }}>
-                                                • {getWorkoutDuration(workout)} min
-                                            </span>
-                                        )}
+                                    <div className="text-accent" style={{ marginTop: '4px' }}>
+                                        Workout {workout.type?.toString().charAt(0) || workout.type}
                                     </div>
+                                    {getWorkoutDuration(workout) && (
+                                        <div style={{ fontSize: '0.85rem', marginTop: '4px', opacity: 0.7 }}>
+                                            Duration: {getWorkoutDuration(workout)} minutes
+                                        </div>
+                                    )}
                                 </div>
                                 {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                             </div>
