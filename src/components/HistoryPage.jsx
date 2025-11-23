@@ -18,6 +18,15 @@ const HistoryPage = () => {
         return found ? found.name : id;
     };
 
+    const getWorkoutDuration = (workout) => {
+        if (!workout.endTime) return null;
+        const start = parseISO(workout.startTime);
+        const end = parseISO(workout.endTime);
+        const durationMs = end - start;
+        const durationMinutes = Math.round(durationMs / 1000 / 60);
+        return durationMinutes;
+    };
+
     if (history.length === 0) {
         return (
             <div style={{ textAlign: 'center', marginTop: '60px' }}>
@@ -52,7 +61,14 @@ const HistoryPage = () => {
                                     <div style={{ fontWeight: 'bold', fontSize: '1.1rem' }}>
                                         {format(date, 'MMM do, yyyy')}
                                     </div>
-                                    <div className="text-accent">Workout {workout.type}</div>
+                                    <div className="text-accent">
+                                        Workout {workout.type}
+                                        {getWorkoutDuration(workout) && (
+                                            <span style={{ marginLeft: '8px', opacity: 0.7 }}>
+                                                • {getWorkoutDuration(workout)} min
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
                                 {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                             </div>
