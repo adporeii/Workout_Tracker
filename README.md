@@ -73,13 +73,3 @@ A modern, mobile-friendly workout tracker designed for strength training with an
 3.  Run `vercel` in the project folder and follow the prompts
 4.  Your app will be live at the provided URL
 
-### Deploy Mobile App with Expo
-The `mobile` folder contains an Expo-based mobile version.
-
-1.  Navigate to the mobile folder: `cd mobile`
-2.  Install dependencies: `npm install`
-3.  Install Expo CLI: `npm install -g expo-cli`
-4.  Start the app: `npx expo start`
-5.  Scan the QR code with the Expo Go app ([iOS](https://apps.apple.com/app/expo-go/id982107779) / [Android](https://play.google.com/store/apps/details?id=host.exp.exponent))
-
-For building standalone apps, see the [Expo documentation](https://docs.expo.dev/build/setup/).
