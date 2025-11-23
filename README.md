@@ -37,7 +37,7 @@ A modern, mobile-friendly workout tracker designed for strength training with an
     ```
 
 4.  **Open the app**:
-    The terminal will show a local URL (usually `http://localhost:5173`). Open this in your browser.
+    The terminal will show a local URL. Open this in your browser.
 
 ## How to Use
 
