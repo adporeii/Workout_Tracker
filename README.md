@@ -65,11 +65,5 @@ A modern, mobile-friendly workout tracker designed for strength training with an
 -   Here you can create test workouts and generate dummy data.
 -   This data is isolated and will **not** appear in your main History or Charts.
 
-## Deployment (Optional)
 
-### Deploy Web App to Vercel
-1.  Create a free account at [vercel.com](https://vercel.com)
-2.  Install Vercel CLI: `npm install -g vercel`
-3.  Run `vercel` in the project folder and follow the prompts
-4.  Your app will be live at the provided URL
 
