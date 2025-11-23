@@ -1,4 +1,4 @@
-# FFF Workout Tracker
+# Workout Tracker
 
 A modern, mobile-friendly workout tracker designed for strength training with an A/B split schedule. Built with React and Vite, this application helps you track your progressive overload, visualize your progress, and manage your workout history.
 
